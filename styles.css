@@ -1,3 +1,40 @@
 * {
     box-sizing: border-box;
 }
+
+.grid-linkdin {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template: 
+    "logo header header" 70px
+    "left-menu main right-menu" 1fr /
+    200px 200px 200px;
+
+    gap: 10px;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: rgb(109, 141, 199);
+}
+
+.header {
+    grid-area: header;
+    background-color: wheat;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    background-color: rgb(109, 141, 199);
+}
+
+.main {
+    grid-area: main;
+    background-color: wheat;
+}
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: rgb(109, 141, 199);
+}
