@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
 }
 
 .grid-linkdin {
@@ -7,9 +9,9 @@
 
     display: grid;
     grid-template: 
-    "logo header header" 70px
+    "logo header header" 50px
     "left-menu main right-menu" 1fr /
-    200px 200px 200px;
+    400px 1fr 400px;
 
     gap: 10px;
 }
@@ -17,6 +19,7 @@
 .logo {
     grid-area: logo;
     background-color: rgb(109, 141, 199);
+    border-radius: 60px;
 }
 
 .header {
@@ -37,4 +40,25 @@
 .right-menu {
     grid-area: right-menu;
     background-color: rgb(109, 141, 199);
+}
+
+@media screen and (max-width: 1236px) {
+    .grid-linkdin {
+        grid-template: 
+        "logo header header" 50px
+        "left-menu main right-menu" 1fr /
+        200px 1fr 200px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .grid-linkdin {
+        grid-template: 
+        "logo header header" 50px
+        "left-menu main" 1fr /
+        70px 1fr;
+    }
+    .right-menu {
+        display: none;
+    }
 }
