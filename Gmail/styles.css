@@ -1,3 +1,73 @@
 * {
     box-sizing: border-box;
 }
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "header header header header" 60px
+    "left-menu emails right-menu small-right-menu" 1fr /
+    200px 1fr 260px 50px;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(240, 241, 179);
+}
+
+.left-menu {
+    grid-area: left-menu;
+    background-color: rgb(177, 224, 163);
+}
+
+.emails {
+    grid-area: emails;
+    background-color: rgb(136, 162, 247);
+}
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: rgb(231, 148, 148);
+}
+
+.small-right-menu {
+    grid-area: small-right-menu;
+    background-color: rgb(238, 183, 120);
+}
+
+@media screen and (max-width: 851px) {
+    .container {
+    grid-template: 
+    "header header" 60px
+    "left-menu emails" 1fr /
+    200px 1fr;
+}
+
+.right-menu,
+.small-right-menu {
+    display: none;
+}
+}
+
+@media screen and (max-width: 435px) {
+    .container {
+    grid-template: 
+    "header header" 60px
+    "left-menu emails" 1fr /
+    70px 1fr;
+}
+}
+
+@media screen and (max-width: 235px) {
+    .container {
+        grid-template:
+        "header" 60px
+        "emails" 1fr /
+        1fr;
+    }
+
+    .left-menu {
+        display: none;
+    }
+}
