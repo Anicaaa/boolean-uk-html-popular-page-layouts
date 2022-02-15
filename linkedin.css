@@ -21,6 +21,36 @@
     background-color: wheat;
 }
 
+.logo {
+    grid-area: logo;
+    border: 2px dashed black;
+
+    height: 50px;
+    width: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.search {
+    grid-area: search;
+    border: 2px dashed black;
+
+    height: 50px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.icons {
+    grid-area: icons;
+    border: 2px dashed black;
+
+    height: 50px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .left-menu {
     grid-area: left-menu;
     background-color: rgb(109, 141, 199);
