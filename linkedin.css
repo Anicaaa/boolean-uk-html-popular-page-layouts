@@ -9,16 +9,11 @@
 
     display: grid;
     grid-template: 
-    "logo header header" 50px
-    "left-menu main right-menu" 1fr /
-    400px 1fr 400px;
+    "header header header header header" 50px
+    ". left-menu main right-menu ." 1fr /
+    200px 400px 1fr 400px 200px;
 
     grid-gap: 10px;
-}
-
-.logo {
-    grid-area: logo;
-    background-color: rgb(109, 141, 199);
 }
 
 .header {
@@ -44,8 +39,8 @@
 @media screen and (max-width: 1236px) {
     .grid-linkdin {
         grid-template: 
-        "logo header header" 50px
-        "left-menu main right-menu" 1fr /
+        "header header header header header" 50px
+        ". left-menu main right-menu ." 1fr /
         200px 1fr 200px;
     }
 }
@@ -53,7 +48,7 @@
 @media screen and (max-width: 719px) {
     .grid-linkdin {
         grid-template: 
-        "logo header" 50px
+        "header header" 50px
         "left-menu main" 1fr /
         70px 1fr;
     }
