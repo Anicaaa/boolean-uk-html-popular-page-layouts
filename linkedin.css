@@ -16,40 +16,41 @@
     grid-gap: 10px;
 }
 
-.header {
+/* HEADER */
+
+.header .three-column-grid__expand-two{
     grid-area: header;
     background-color: wheat;
 }
 
-.logo {
+  .logo {
     grid-area: logo;
-    border: 2px dashed black;
-
-    height: 50px;
+    min-height: 50px;
     width: 50px;
-    display: grid;
-    grid-template-columns: 1fr;
+    border: 2px dotted blue;
 }
 
 .search {
     grid-area: search;
-    border: 2px dashed black;
-
-    height: 50px;
+    min-height: 50px;
     width: 200px;
-    display: grid;
-    grid-template-columns: 1fr;
+    border: 2px dotted blue;
 }
 
 .icons {
     grid-area: icons;
-    border: 2px dashed black;
-
-    height: 50px;
-    width: 400px;
-    display: grid;
-    grid-template-columns: 1fr;
+    min-height: 50px;
+    width: 500px;
+    border: 2px dotted blue;
 }
+
+.three-column-grid__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 5px;
+  }
+
+
 
 .left-menu {
     grid-area: left-menu;
