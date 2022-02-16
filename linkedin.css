@@ -19,17 +19,27 @@
 
 .header {
     grid-area: header;
+    padding: 3px;
     border: 2px dashed black;
 }
 
 .three-column-grid__expand-two {
     display: grid;
     grid-template-columns: auto 1fr auto;
+    gap: 30px;
 }
 
 .grid-auto-column {
     display: grid;
     grid-auto-flow: column;
+    gap: 15px;
+}
+
+.center-wrapper {
+    max-width: 900px;
+    padding-left: 10px;
+    margin-left: 15px;
+    margin: 0 auto;
 }
 
 .logo {
