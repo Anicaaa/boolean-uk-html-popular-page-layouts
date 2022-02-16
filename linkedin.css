@@ -68,21 +68,26 @@
     border: 2px dashed blue;
 } 
 
-
-
-
-
-
-
-
-
-
-
 /* MAIN */
 
 .left-menu {
     grid-area: left-menu;
     border: 2px dashed black;
+    padding-left: 7px;
+}
+
+.profile,
+.profile-two,
+.profile-three {
+    height: 300px;
+    width: 270px;
+    border: 2px dashed blue;
+}
+
+.profile .inner-box {
+    height: 300px;
+    width: 170px;
+    border: 2px dashed green;
 }
 
 .main {
