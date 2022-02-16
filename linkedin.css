@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    text-align: center;
     font-family: sans-serif;
 }
 
@@ -9,7 +8,7 @@
 
     display: grid;
     grid-template: 
-    "header header header header header" 50px
+    "header header header header header" 70px
     ". left-menu main right-menu ." 1fr /
     1fr 1fr 2fr 1fr 1fr;
 
@@ -22,6 +21,52 @@
     grid-area: header;
     border: 2px dashed black;
 }
+
+.three-column-grid__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.grid-auto-column {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border: 2px dashed blue;
+}
+
+.search {
+    width: 500px;
+    height: 60px;
+    border: 2px dashed blue;
+}
+
+.icons-list {
+    margin: 0;
+    padding: 0px;
+    list-style-type: none;
+}
+
+/* Selecet any li directly inside an element that has class = icons.list */
+
+.icons-list > li {
+    width: 60px;
+    height: 60px;
+    border: 2px dashed blue;
+} 
+
+
+
+
+
+
+
+
+
+
 
 /* MAIN */
 
