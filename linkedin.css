@@ -23,10 +23,6 @@
     border: 2px dashed black;
 }
 
-.header-two > * {
-    border: 2px dashed red;
-}
-
 .three-column-grid__expand-two {
     display: grid;
     grid-template-columns: auto 1fr auto;

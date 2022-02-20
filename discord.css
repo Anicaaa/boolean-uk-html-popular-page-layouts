@@ -1,3 +1,38 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > * {
+    height: 100vh;
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid black;
+}
+
+.main-layout > * {
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid red;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+}
+
+/* LEFT SIDE - ICON LIST */
+
+.icon-list > li {
+    padding: 2px;
+    margin: 2px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+
+.icon-list {
+    list-style-type: none;
 }
