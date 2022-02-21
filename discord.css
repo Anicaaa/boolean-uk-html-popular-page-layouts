@@ -9,6 +9,8 @@ body > * {
     padding: 2px;
     margin: 2px;
     border: 2px solid black;
+    font-size: 20px;
+    font-family: sans-serif;
 }
 
 .main-layout > * {
@@ -19,14 +21,14 @@ body > * {
 
 .main-layout {
     display: grid;
-    grid-template-columns: 120px 1fr 2fr;
+    grid-template-columns: 120px 300px 2fr;
 }
 
 /* LEFT SIDE - ICON LIST */
 
 .icon-list > li {
     padding: 2px;
-    margin: 2px;
+    margin: 5px;
     height: 100px;
     width: 100px;
     border: 2px solid orange;
@@ -36,3 +38,58 @@ body > * {
 .icon-list {
     list-style-type: none;
 }
+
+/* MAIN SIDE */
+
+.sidebar > * {
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid orange;
+}
+
+.space {
+    height: 360px;
+}
+
+.username > * {
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid blue;
+}
+
+.three-column {
+    display: grid;
+    grid-template-columns: auto 2fr 1fr;
+}
+
+
+.pic-sm {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* RIGHT SIDE */
+
+.right-side-bar {
+    padding: 2px;
+    margin: 5px;
+    border: 2px solid orange;
+}
+
+.setting-list > * {
+    padding: 2px;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid green;
+}
+
+.setting-list {
+    list-style-type: none;
+}
+
+.search-bar {
+    width: 200px;
+}
+
