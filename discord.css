@@ -59,13 +59,13 @@ body > * {
 
 .three-column {
     display: grid;
-    grid-template-columns: auto 2fr 1fr;
+    grid-template-columns: repeat(3, auto);
 }
 
 
 .pic-sm {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
 }
 
@@ -77,19 +77,38 @@ body > * {
     border: 2px solid orange;
 }
 
-.setting-list > * {
-    padding: 2px;
-    margin: 5px;
-    height: 30px;
-    width: 30px;
-    border: 2px solid green;
+.four-column-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
 }
 
-.setting-list {
-    list-style-type: none;
+.class-five, .space-two, .settings-list {
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid blue;
+}
+
+.settings-list > * {
+    height: 32px;
+    width: 32px;
+    padding: 2px;
+    margin: 5px;
+    border: 2px solid green;
 }
 
 .search-bar {
     width: 200px;
 }
+
+.settings-list {
+    list-style-type: none;
+}
+
+.grid-auto-column {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+
+
 
