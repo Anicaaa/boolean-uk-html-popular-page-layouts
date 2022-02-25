@@ -48,7 +48,7 @@ body > * {
 }
 
 .space {
-    height: 360px;
+    height: 410px;
 }
 
 .username > * {
@@ -62,11 +62,11 @@ body > * {
     grid-template-columns: repeat(3, auto);
 }
 
-
 .pic-sm {
     height: 60px;
     width: 60px;
     border-radius: 50%;
+    border: 2px solid blue;
 }
 
 /* RIGHT SIDE */
@@ -109,6 +109,35 @@ body > * {
     grid-auto-flow: column;
 }
 
+.right-bar-empty {
+    padding: 2px;
+    margin: 5px;
+    border: 2px solid orange;
+    height: 450px;
+}
 
+.right-bar-welcome {
+    padding: 2px;
+    margin: 5px;
+    border: 2px solid orange;
+    height: 435px;
+}
 
+.welcome, .steven-message, .message-bar {
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid blue;
+}
+
+.chat-box {
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid green;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
 
