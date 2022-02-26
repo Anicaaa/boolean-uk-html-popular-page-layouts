@@ -6,17 +6,11 @@
 
 body > * {
     min-height: 100vh;
-    padding: 2px;
-    margin: 2px;
-    border: 2px solid black;
     font-size: 20px;
     font-family: sans-serif;
 }
 
 .main-layout > * {
-    padding: 2px;
-    margin: 2px;
-    border: 2px solid red;
     height: 100vh;
 }
 
@@ -33,10 +27,9 @@ body > * {
 
 .icon-list > li {
     padding: 2px;
-    margin: 5px;
-    height: 100px;
-    width: 100px;
-    border: 2px solid orange;
+    margin: 10px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
 }
 
@@ -45,8 +38,8 @@ body > * {
 }
 
 .icon-img {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     border-radius: 50%;
 }
 
@@ -59,7 +52,6 @@ body > * {
 .sidebar > * {
     padding: 2px;
     margin: 10px;
-    border: 2px solid orange;
 }
 
 .invite-people {
@@ -77,13 +69,16 @@ body > * {
 }
 
 .space {
-    height: 245px;
+    height: 280px;
+}
+
+.general, .class, .staff {
+    border-top: 2px solid grey;
 }
 
 .username > * {
     padding: 2px;
     margin: 2px;
-    border: 2px solid blue;
 }
 
 .settings {
@@ -99,7 +94,6 @@ body > * {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    border: 2px solid blue;
 }
 
 button {
@@ -125,7 +119,6 @@ button {
 .right-side-bar {
     padding: 2px;
     margin: 5px;
-    border: 2px solid orange;
 }
 
 .four-column-grid {
@@ -136,7 +129,6 @@ button {
 .class-five, .space-two, .settings-list {
     padding: 2px;
     margin: 2px;
-    border: 2px solid blue;
 }
 
 .settings-list > * {
@@ -144,7 +136,6 @@ button {
     width: 32px;
     padding: 2px;
     margin: 5px;
-    border: 2px solid green;
 }
 
 .search-bar {
@@ -166,27 +157,23 @@ button {
 .right-bar-empty {
     padding: 2px;
     margin: 5px;
-    border: 2px solid orange;
     height: 590px;
 }
 
 .right-bar-welcome {
     padding: 2px;
     margin: 5px;
-    border: 2px solid orange;
     height: 300px;
 }
 
 .welcome, .steven-message, .message-bar {
     padding: 5px;
     margin: 5px;
-    border: 2px solid blue;
 }
 
 .chat-box {
     padding: 2px;
     margin: 2px;
-    border: 2px solid green;
 }
 
 .two-columns {
@@ -197,7 +184,7 @@ button {
 
 .message-bar {
     background-color: lightgray;
-    padding-left: 50px;
+    padding-left: 30px;
     padding-top: 15px;
     height: 60px;
     border-radius: 15px;
