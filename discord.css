@@ -17,14 +17,19 @@ body > * {
     padding: 2px;
     margin: 2px;
     border: 2px solid red;
+    height: 100vh;
 }
 
 .main-layout {
     display: grid;
-    grid-template-columns: 120px 300px 2fr;
+    grid-template-columns: auto 300px 1fr;
 }
 
 /* LEFT SIDE - ICON LIST */
+
+.left-side-bar {
+    background-color: rgb(185, 185, 185);
+}
 
 .icon-list > li {
     padding: 2px;
@@ -39,7 +44,17 @@ body > * {
     list-style-type: none;
 }
 
+.icon-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
 /* MAIN SIDE */
+
+.main {
+    background-color: rgb(221, 221, 221);
+}
 
 .sidebar > * {
     padding: 2px;
@@ -51,14 +66,28 @@ body > * {
     text-align: center;
 }
 
+.add-friends {
+    margin-top: 15px;
+}
+
+.add-people {
+    height: 120px;
+    width: 150px;
+    border-radius: 30%;
+}
+
 .space {
-    height: 365px;
+    height: 245px;
 }
 
 .username > * {
     padding: 2px;
     margin: 2px;
     border: 2px solid blue;
+}
+
+.settings {
+    padding-top: 15px;
 }
 
 .three-column {
@@ -71,6 +100,24 @@ body > * {
     width: 60px;
     border-radius: 50%;
     border: 2px solid blue;
+}
+
+button {
+    padding: 15px;
+    margin-top: 15px;
+    color: white;
+    background-color: rgb(121, 86, 219);
+    opacity: 0.7;
+    border: none;
+    font-size: 15px;
+}
+
+.user-code {
+    color: grey;
+}
+
+.name-sm {
+    padding-top: 10px;
 }
 
 /* RIGHT SIDE */
@@ -131,8 +178,8 @@ body > * {
 }
 
 .welcome, .steven-message, .message-bar {
-    padding: 2px;
-    margin: 2px;
+    padding: 5px;
+    margin: 5px;
     border: 2px solid blue;
 }
 
@@ -156,7 +203,26 @@ body > * {
     border-radius: 15px;
 }
 
-.grey-text {
+.grey-text, .date-time{
     color: grey;
 }
+
+.date-time {
+    font-size: 15px;
+}
+
+.julia {
+    color: rgb(54, 194, 36);
+}
+
+.blue-links {
+    display: inline-flex;
+    gap: 50px;
+    padding-left: 10px;
+}
+
+.blue-link {
+    color: rgb(118, 203, 252);
+}
+
 
